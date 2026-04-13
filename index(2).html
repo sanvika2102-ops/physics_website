@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quantum Inspired Optimization</title>
+
+<style>
+body{
+margin:0;
+font-family:'Segoe UI';
+background:linear-gradient(135deg,#1a0000,#330000,#1a0000);
+color:#fff;
+overflow-x:hidden;
+}
+
+/* HEADER */
+header{
+text-align:center;
+padding:100px 20px;
+background:linear-gradient(270deg,#ff0080,#ff8c00,#ffd700,#ff0080);
+background-size:600% 600%;
+animation:gradientMove 8s infinite;
+}
+@keyframes gradientMove{
+0%{background-position:0%}
+50%{background-position:100%}
+100%{background-position:0%}
+}
+
+/* NAV */
+nav{
+background:#220000;
+padding:15px;
+text-align:center;
+position:sticky;
+top:0;
+}
+nav a{
+color:#ffd700;
+margin:10px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* SECTION */
+section{padding:60px 20px;}
+.container{max-width:1100px;margin:auto;}
+
+/* CARD */
+.card{
+background:rgba(255,255,255,0.05);
+padding:25px;
+margin:20px 0;
+border-radius:15px;
+transition:0.4s;
+backdrop-filter:blur(10px);
+}
+.card:hover{
+transform:scale(1.05);
+box-shadow:0 0 25px #ff8c00;
+}
+
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+/* ANIMATION */
+.pop{opacity:0;transform:scale(0.7);transition:0.6s;}
+.slide{opacity:0;transform:translateY(50px);transition:0.6s;}
+.show{opacity:1;transform:none;}
+
+/* TABLE */
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+th,td{
+padding:10px;
+border:1px solid #ff8c00;
+text-align:center;
+}
+
+/* FLOAT */
+.float{
+animation:float 3s ease-in-out infinite;
+}
+@keyframes float{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-10px);}
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:20px;
+background:#220000;
+}
+
+canvas{
+background:#fff;
+border-radius:10px;
+margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Quantum Inspired Optimization</h1>
+<p>Advanced Quantum-Based Problem Solving</p>
+</header>
+
+<nav>
+<a href="#team">Team</a>
+<a href="#data">Data</a>
+<a href="#graphs">Graphs</a>
+<a href="#theory">Theory</a>
+<a href="#insights">Insights</a>
+</nav>
+
+<!-- TEAM -->
+<section id="team">
+<div class="container">
+<h2>Our Team</h2>
+<div class="grid">
+<div class="card pop float">Dharani Sree</div>
+<div class="card pop float">Sanvika</div>
+<div class="card pop float">Palak</div>
+<div class="card pop float">Shreya</div>
+<div class="card pop float">Bhaskar</div>
+<div class="card pop float">Sai Sunand</div>
+</div>
+</div>
+</section>
+
+<!-- DATA -->
+<section id="data">
+<div class="container">
+<div class="card slide">
+<h2>Quantum Experimental Data</h2>
+
+<table>
+<tr><th>Iteration</th><th>Cost</th><th>Time</th><th>Probability</th><th>Efficiency</th></tr>
+<tr><td>1</td><td>120</td><td>0.45</td><td>0.50</td><td>20</td></tr>
+<tr><td>5</td><td>95</td><td>0.40</td><td>0.60</td><td>40</td></tr>
+<tr><td>10</td><td>82</td><td>0.35</td><td>0.70</td><td>60</td></tr>
+<tr><td>15</td><td>80</td><td>0.32</td><td>0.78</td><td>75</td></tr>
+<tr><td>20</td><td>78</td><td>0.30</td><td>0.85</td><td>90</td></tr>
+<tr><td>25</td><td>76</td><td>0.29</td><td>0.90</td><td>93</td></tr>
+<tr><td>30</td><td>75</td><td>0.28</td><td>0.95</td><td>95</td></tr>
+</table>
+
+</div>
+</div>
+</section>
+
+<!-- GRAPHS -->
+<section id="graphs">
+<div class="container">
+<div class="card pop"><h3>Cost Reduction</h3><canvas id="c1"></canvas></div>
+<div class="card pop"><h3>Time Reduction</h3><canvas id="c2"></canvas></div>
+<div class="card pop"><h3>Efficiency Growth</h3><canvas id="c3"></canvas></div>
+<div class="card pop"><h3>Probability</h3><canvas id="c4"></canvas></div>
+</div>
+</section>
+
+<!-- THEORY -->
+<section id="theory">
+<div class="container">
+<div class="card slide">
+<h2>Quantum Optimization Theory & Advantages</h2>
+
+<p><b>Meaning:</b> Quantum-inspired optimization uses concepts like superposition and probability to explore multiple solutions simultaneously.</p>
+
+<p><b>Key Concepts:</b> Superposition, Probability Amplitude, Quantum Tunneling, Parallel Exploration.</p>
+
+<p><b>Advantages:</b></p>
+<ul>
+<li>Faster convergence</li>
+<li>Better accuracy</li>
+<li>Avoids local minima</li>
+<li>Handles large-scale problems</li>
+<li>Efficient resource usage</li>
+<li>Scalable for future technologies</li>
+</ul>
+
+<p><b>Applications:</b> Traffic systems, energy optimization, finance, AI, smart cities.</p>
+
+<p><b>Observations:</b> Cost reduces from 120 to 75, time reduces, efficiency increases to 95%.</p>
+
+<p><b>Conclusion:</b> It improves efficiency and provides better solutions using quantum principles.</p>
+
+</div>
+</div>
+</section>
+
+<!-- INSIGHTS -->
+<section id="insights">
+<div class="container">
+<div class="card slide">
+<h2>Key Insights</h2>
+<ul>
+<li>Probability increases → better solutions</li>
+<li>Efficiency improves rapidly</li>
+<li>Stable convergence observed</li>
+</ul>
+</div>
+</div>
+</section>
+
+<footer>
+<p>Jain University | Applied Physics Project</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+let x=[1,5,10,15,20,25,30];
+let cost=[120,95,82,80,78,76,75];
+let time=[0.45,0.40,0.35,0.32,0.30,0.29,0.28];
+let eff=[20,40,60,75,90,93,95];
+let prob=[0.50,0.60,0.70,0.78,0.85,0.90,0.95];
+
+new Chart(c1,{type:'line',data:{labels:x,datasets:[{label:'Cost',data:cost}]}});
+new Chart(c2,{type:'bar',data:{labels:x,datasets:[{label:'Time',data:time}]}});
+new Chart(c3,{type:'line',data:{labels:x,datasets:[{label:'Efficiency',data:eff}]}});
+new Chart(c4,{type:'line',data:{labels:x,datasets:[{label:'Probability',data:prob}]}});
+
+const els=document.querySelectorAll('.pop,.slide');
+window.addEventListener('scroll',()=>{
+els.forEach(e=>{
+if(e.getBoundingClientRect().top<window.innerHeight-100){
+e.classList.add('show');
+}
+});
+});
+</script>
+
+</body>
+</html>
